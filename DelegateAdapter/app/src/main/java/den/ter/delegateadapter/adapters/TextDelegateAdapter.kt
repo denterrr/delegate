@@ -16,7 +16,7 @@ class TextDelegateAdapter :
         var name: TextView = view.findViewById(R.id.tv)
 
         fun bind(item: TextModel) {
-            name.text = item.getText()
+            name.text = item.text
         }
     }
 

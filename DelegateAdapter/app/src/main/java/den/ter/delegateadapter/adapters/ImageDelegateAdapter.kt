@@ -20,7 +20,7 @@ class ImageDelegateAdapter(val context:Context) :
 
         fun bind(item: ImageModel, context2:Context) {
             Glide.with(context2)
-                .load(item.getUrl())
+                .load(item.url)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .error(R.drawable.ic_launcher_foreground)
                 .into(iv)
